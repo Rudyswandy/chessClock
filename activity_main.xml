@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.rudy.myapplication.MainActivity">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="03:00"
+        android:textSize="30sp"
+        android:id="@+id/player2"
+        android:onClick="start2"
+        android:rotation="180"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="PAUSE"
+        android:textAlignment="center"
+        android:id="@+id/btnPause"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/player1"
+        android:layout_alignStart="@+id/player1"
+        android:onClick="pause"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="RESUME"
+        android:textAlignment="center"
+        android:id="@+id/btnResume"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/player1"
+        android:layout_alignStart="@+id/player1"
+        android:onClick="resume"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btnPause"
+        android:layout_alignBottom="@+id/btnPause"
+        android:layout_alignRight="@+id/player2"
+        android:layout_alignEnd="@+id/player2"
+        android:text="RESET"
+        android:id="@+id/btnReset"
+        android:onClick="reset"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:id="@+id/test"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/player1"
+        android:text="03:00"
+        android:textSize="30sp"
+        android:onClick="start1"/>
+
+</RelativeLayout>
